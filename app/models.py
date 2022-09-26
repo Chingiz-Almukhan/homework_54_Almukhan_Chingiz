@@ -15,6 +15,7 @@ class Product(models.Model):
 
 class Category(models.Model):
     name = models.CharField(verbose_name='Название', max_length=200, db_index=True)
+    description = models.CharField(verbose_name='Описание', max_length=200, null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return f'{self.name} - {self.description}'
