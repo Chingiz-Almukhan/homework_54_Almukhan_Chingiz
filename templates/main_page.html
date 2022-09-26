@@ -1,17 +1,6 @@
 {% extends 'base.html' %}
 {% block title %} Main {% endblock %}
-
 {% block content %}
-{#    {% for product in products %}#}
-{#                <tr>#}
-{#                  <th scope="row">{{ product.pk }}</th>#}
-{#                  <td>{{ product.name }}</td>#}
-{#                  <td>{{ product.description }}</td>#}
-{#                  <td>{{ product.cost }}</td>#}
-{#                  <td><img src="{{ product.image }}" alt="img"></td>#}
-{#                  <td>{{ product.category.name }}</td>#}
-{#                </tr>#}
-{#    {% endfor %}#}
 <div class="container px-4 px-lg-5 mt-5">
     <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 {% for product in products %}
