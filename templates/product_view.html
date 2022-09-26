@@ -22,7 +22,7 @@
                             </div>
                             <p class="about">{{ product.description }}</p>
                             <div class=" mt-5">
-                                <h6 class="text-muted"> {{ product.created_at }}</h6>
+                                <h6 class="text-muted">Добавлено: {{ product.created_at|date:'Y-m-d H:i:s'}}</h6>
                             </div>
                             <div class="cart mt-4 align-items-center"> <button class="btn btn-primary text-uppercase mr-2 px-4">Редактировать</button> <button class="btn btn-danger text-uppercase mr-2 px-4">Удалить</button></div>
                         </div>
