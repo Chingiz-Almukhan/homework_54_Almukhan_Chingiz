@@ -1,7 +1,9 @@
 from django.urls import path
 
-from app.views import index_view, product_view, add_view, category_view, edit_view, delete_view, categories_view, \
-    category_edit_view, category_delete_view
+from app.views.add_view import add_view, category_view
+from app.views.base import index_view, product_view, categories_view
+from app.views.delete_view import delete_view, category_delete_view
+from app.views.edit_view import edit_view, category_edit_view
 
 urlpatterns = [
     path('', index_view, name='main'),
