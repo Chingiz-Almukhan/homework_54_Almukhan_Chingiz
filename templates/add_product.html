@@ -7,12 +7,12 @@
         <div class="card rounded-3">
           <div class="card-body p-4">
             <h4 class="text-center my-3 pb-3">Добавить товар</h4>
-            <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2" action="confirm/" method="POST">
+            <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2" action="{% url 'add' %}" method="POST">
               {% csrf_token %}
                   <label for="name"></label><input required name="name" placeholder="Введите название товара" type="text" id="name" class="form-control" />
                   <label for="cost"></label><input required name="cost" placeholder="Введите цену" type="number" id="cost" class="form-control" />
                   <label for="image"></label><input required name="image" placeholder="Введите ссылку на изображение" type="text" id="name" class="form-control" />
-                  <label for="more_info"></label><textarea name="more_info" id="more_info" placeholder='Введите описание' class="form-control"></textarea>
+                  <label for="description"></label><textarea name="description" id="description" placeholder='Введите описание' class="form-control"></textarea>
             <div class="col-3">
                  <label>
                     <select name='category' class="form-control mt-4">

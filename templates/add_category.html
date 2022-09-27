@@ -7,7 +7,7 @@
         <div class="card rounded-3">
           <div class="card-body p-4">
             <h4 class="text-center my-3 pb-3">Добавить категорию</h4>
-            <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2" action="confirm/" method="POST">
+            <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2" action="{% url 'category_add' %}" method="POST">
                 {% csrf_token %}
             <label for="name"></label><input required name="name" placeholder="Введите название" type="text" id="name" class="form-control" />
             <label for="description"></label><textarea name="description" id="description" placeholder='Введите описание' class="form-control"></textarea>
