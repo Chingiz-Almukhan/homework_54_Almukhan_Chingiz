@@ -24,6 +24,30 @@
   }
 },
 {
+  "model": "app.product",
+  "pk": 3,
+  "fields": {
+    "name": "Куртка",
+    "description": "",
+    "category": 4,
+    "created_at": "2022-09-27T01:53:56.688Z",
+    "cost": "20000",
+    "image": "https://static.street-beat.ru/upload/iblock/fd0/fd0485a6f8849154739bece25de43d44.jpg"
+  }
+},
+{
+  "model": "app.product",
+  "pk": 4,
+  "fields": {
+    "name": "Велосипед",
+    "description": "",
+    "category": 3,
+    "created_at": "2022-09-27T01:54:14.556Z",
+    "cost": "15000",
+    "image": "https://www.alienbike.ru/upload/iblock/3fa/ah7snaeyjzsdq3c17gqvc2tq1743cpes.jpg"
+  }
+},
+{
   "model": "app.category",
   "pk": 1,
   "fields": {
@@ -37,6 +61,22 @@
   "fields": {
     "name": "Техника",
     "description": null
+  }
+},
+{
+  "model": "app.category",
+  "pk": 3,
+  "fields": {
+    "name": "Спорт",
+    "description": ""
+  }
+},
+{
+  "model": "app.category",
+  "pk": 4,
+  "fields": {
+    "name": "Одежда ",
+    "description": ""
   }
 },
 {
