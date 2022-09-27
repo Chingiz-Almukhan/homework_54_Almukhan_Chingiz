@@ -15,7 +15,7 @@
                   <label for="description"></label><textarea name="description" id="description" class="form-control">{{ product.description }}</textarea>
             <div class="col-3">
                  <label>
-                    <select name='category' class="form-control mt-4">
+                    <select name='category' required class="form-control mt-4">
                       <option value="" disabled selected hidden>{{product.category.name}}</option>
                       {% for category in categories %}
                         <option value="{{ category.id }}">{{ category.name }}</option>
